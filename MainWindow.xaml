@@ -1,0 +1,26 @@
+﻿<Window x:Class="SpravaZamestnancu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpravaZamestnancu"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FF8997E2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition Width="139*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="JmenoTextBox" Margin="195,122,331,244" Text="Jméno" Grid.Column="1"/>
+        <TextBox x:Name="PrijmeniTextBox" Margin="195,217,331,151" Text="Příjmení" Grid.Column="1"/>
+        <TextBox x:Name="IDTextBox" Margin="195,35,331,360" Text="ID" Grid.Column="1"/>
+        <DatePicker x:Name="DatumNarozeniDatePicker" Margin="195,338,331,41" Grid.Column="1"/>
+        <Button Content="Přidat Zaměstnance" Click="PridatZamestnance_Click" Margin="27,88,544,278" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5">
+        </Button>
+        <Button Content="Upravit Zaměstnance" Click="UpravitZamestnance_Click" Margin="27,333,544,37" Grid.ColumnSpan="2"/>
+        <Button Content="Odebrat Zaměstnance" Click="OdebratZamestnance_Click" Margin="27,217,544,151" Grid.ColumnSpan="2"/>
+        <Button Content="Zobrazit Detaily" Click="ZobrazitDetaily_Click" Margin="27,10,544,375" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="SeznamZamestnancu" Margin="387,35,35,41" Grid.Column="1"/>
+
+    </Grid>
+</Window>
